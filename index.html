@@ -20,6 +20,28 @@
         .sora-fonts{
             font-family: "Sora", serif;
         }
+        .banner{
+          width: 100%;
+          height: 100%;
+          border: 10px solid black;
+          border-radius: 20px;
+          padding-bottom: 10px;
+
+          animation-name: border;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+        }
+         @keyframes border{
+          0%{
+            border-color: #FFF9F4;
+          }
+          50%{
+            border-color: #F9DF8A;
+          }
+          80%{
+            border-color: #E2CDFB;
+          }
+         }
     </style>
 </head>
 <body class="sora-font">
@@ -57,16 +79,20 @@
            </div>
          </nav>
          <!-- banner-section -->
-          <section class="banner max-w-[1320px] mx-auto mt-8 md:mt-[76px] px-3  bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-contain bg-right-bottom h-[50vh] md:h-[70vh] md:bg-cover">
-            <!-- top-banner -->
-             <div class="space-y-4 w-[90%] md:w-[50%] z-10 relative">
-                <h1 class="text-[30px] md:text-[56px] font-bold">Pamper Your Pet, Because They Deserve the Bes</h1>
-                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="btn bg-[#FFDC26]
-                px-7 text-xl">Find a pet</button>
-             </div>
-              
-          </section>
+          <div class="parent">
+            <div class="background">
+              <section class="banner max-w-[1320px] mx-auto mt-8 md:mt-[76px] px-3  bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-contain bg-right-bottom h-[50vh] md:h-[70vh] md:bg-cover">
+                <!-- top-banner -->
+                 <div class="space-y-4 w-[90%] md:w-[50%] z-10 relative">
+                    <h1 class="text-[30px] md:text-[56px] font-bold">Pamper Your Pet, Because They Deserve the Bes</h1>
+                    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="btn bg-[#FFDC26]
+                    px-7 text-xl">Find a pet</button>
+                 </div>
+                  
+              </section>
+            </div>
+          </div>
      </header>
      <!-- main -->
       <main>
